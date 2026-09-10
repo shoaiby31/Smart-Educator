@@ -1,8 +1,12 @@
 import React from "react";
-import { Box } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 
-import WelcomeBanner from "../components/WelcomeBanner";
 import DashboardStats from "../components/DashboardStats";
+import RecentActivities from "../components/RecentActivities";
+import UpcomingEvents from "../components/UpcomingEvents";
+import StatisticsCards from "../components/StatisticsCards";
+
+
 import QuickActions from "../components/QuickActions";
 const Dashboard = () => {
   return (
@@ -10,7 +14,16 @@ const Dashboard = () => {
       {/* <WelcomeBanner /> */}
 
       <DashboardStats />
+      <Grid container spacing={3}>
+        <Grid size={{ xs: 12, md: 8 }}>
+          <UpcomingEvents />
 
+        </Grid>
+        <Grid size={{ xs: 12, md: 4 }}>
+          <RecentActivities />
+        </Grid>
+      </Grid>
+      <StatisticsCards />
       <QuickActions />
     </Box>
   );

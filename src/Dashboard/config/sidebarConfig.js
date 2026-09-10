@@ -23,20 +23,26 @@ export const sidebarConfig = {
       path: "/dashboard/admin",
     },
     {
-      title: "School",
-      icon: <SchoolRoundedIcon />,
-      path: "/school",
-    },
-    {
       title: "My Faculty",
       icon: <PeopleRoundedIcon />,
       path: "/dashboard/admin/faculty-members",
     },
     {
+      title: "Academic Sessions",
+      icon: <SchoolRoundedIcon />,
+      path: "/dashboard/admin/academic-sessions",
+    },
+    
+    {
         title: "Classes",
         icon: <ClassRounded />,
         path: "/dashboard/classes",
       },
+      {
+      title: "Students",
+      icon: <PeopleRoundedIcon />,
+      path: "/dashboard/students",
+    },
       {
         title: "Quizzes",
         icon: <QuizRounded />,

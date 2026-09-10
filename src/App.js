@@ -10,9 +10,9 @@ import LandingPage from "./landing/pages/Landing";
 import LandingNavbar from "./landing/components/LandingNavbar";
 import LandingFooter from "./landing/components/Footer";
 
-import AboutUs from './components/AboutUs';
-import Services from './components/Services';
-import Contact from './components/contact';
+import AboutUs from './landing/pages/AboutUs';
+import Services from './landing/pages/Services';
+import Contact from './landing/components/contact';
 
 // Authentication
 import Login from "./Authentication/pages/Login";

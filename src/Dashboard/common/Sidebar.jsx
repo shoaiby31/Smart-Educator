@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo } from "react";
 import {
   Avatar,
   Badge,
@@ -11,14 +11,12 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
-  Toolbar,
   Typography, useMediaQuery, useTheme
 } from "@mui/material";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import Logo from "../../assets/logo.png";
 
-import { useAuth } from "../../Authentication";
 import { sidebarConfig } from "../config/sidebarConfig";
 import { KeyboardArrowDownRounded, LogoutRounded, WorkspacePremiumRounded } from "@mui/icons-material";
 
@@ -66,13 +64,13 @@ const Sidebar = ({
             "& svg": { fontSize: 18 },},
             "& .MuiTypography-root": { fontSize: 13, fontWeight: 500, },
             "&.active": { background: "linear-gradient(90deg,#ec3aa6,#6b46ff)", color: "#fff",
-            "& .MuiListItemIcon-root": { color: "#fff", }, },
+            "& .MuiListItemIcon-root": { color: "#fff", }, "&:hover": { background: "linear-gradient(90deg,#ec3aa6,#6b46ff)", color: "#fff" } },
             "&:hover": { background: "#f5f2ff", },}}
           >
             <ListItemIcon>{item.icon}</ListItemIcon>
 <Box
             sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%", }} >
-           <ListItemText
+           <ListItemText 
               primary={item.title}
             />
             {item.badge && (

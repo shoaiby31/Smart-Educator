@@ -8,6 +8,8 @@ import TeacherDashboard from "../Dashboard/teacher/pages/Dashboard";
 import StudentDashboard from "../Dashboard/student/pages/Dashboard";
 
 import FacultyMembers from "../Dashboard/admin/pages/FacultyMembers";
+import AcademicSessions from "../Dashboard/admin/pages/AcademicSessions";
+
 import ProfileRoutes from "../routes/profileRoutes";
 
 
@@ -66,6 +68,16 @@ const DashboardRoutes = () => {
                             allowedRoles={["admin"]}
                         >
                             <FacultyMembers />
+                        </ProtectedRoute>
+                    }
+                />
+                <Route
+                    path="admin/academic-sessions"
+                    element={
+                        <ProtectedRoute
+                            allowedRoles={["admin"]}
+                        >
+                            <AcademicSessions />
                         </ProtectedRoute>
                     }
                 />
