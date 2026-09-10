@@ -101,7 +101,7 @@ const AcademicSessionHeader = ({
           },
         }}
       >
-        Create Session
+        Create Sessions
       </Button>
     </Box>
   );
