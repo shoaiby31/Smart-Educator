@@ -7,6 +7,7 @@ import {
 } from "@mui/material";
 import AcademicSessionHeader from "../components/academicSessions/AcademicSessionHeader";
 import AcademicSessionStats from "../components/academicSessions/AcademicSessionStats";
+import AcademicSessionTable from "../components/academicSessions/AcademicSessionTable";
 const AcademicSessions = () => {
   
     return (
@@ -16,12 +17,13 @@ const AcademicSessions = () => {
                 bgcolor: "#F8FAFC",
                 py: {
                     xs: 3,
-                    md: 4,
+                    md: 1,
                 },
             }}
         >
            <AcademicSessionHeader/>
            <AcademicSessionStats/>
+           <AcademicSessionTable/>
         </Box>
     );
 };

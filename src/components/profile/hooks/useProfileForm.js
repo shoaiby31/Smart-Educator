@@ -113,6 +113,8 @@ const useProfileForm = (
   }, [
     activeRole,
     profile,
+    user?.fullName,
+  user?.displayName,
   ]);
 
   //----------------------------------------------------

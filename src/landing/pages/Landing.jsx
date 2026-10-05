@@ -9,10 +9,7 @@ import Contact from '../components/contact'
 import AnnouncementBar from "../components/AnnouncementBar";
 import AboutSmartEducator from '../components/AboutSmartEducator'
 import HowSmartEducatorWorks from '../components/HowSmartEducatorWorks'
-import WhyChooseUs from "../components/WhyChooseUs";
-import FeaturesSection from "../components/FeaturesSection";
 import CTASection from "../components/CTASection";
-import StatsSection from "../components/StatsSection";
 const Landing = () => {
     return (
         <>

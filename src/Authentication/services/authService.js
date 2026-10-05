@@ -3,7 +3,6 @@ import {
   signInWithEmailAndPassword,
   signOut,
   updateProfile,
-  GoogleAuthProvider,
   signInWithPopup,
   sendPasswordResetEmail,
   sendEmailVerification,
@@ -11,7 +10,6 @@ import {
 import { auth, googleProvider } from "../../config/firebase";
 import {
   createUserProfile,
-  userProfileExists,
    getUserByEmail,
   updateEmailVerification,
 } from "./userService";

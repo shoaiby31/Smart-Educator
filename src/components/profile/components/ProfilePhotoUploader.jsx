@@ -10,7 +10,6 @@ import {
 
 import CloudUploadRoundedIcon from "@mui/icons-material/CloudUploadRounded";
 import PhotoCameraRoundedIcon from "@mui/icons-material/PhotoCameraRounded";
-import { useMemo } from "react";
 
 const ProfilePhotoUploader = ({
   image = "",

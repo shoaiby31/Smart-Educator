@@ -27,6 +27,8 @@ const AcademicSessionHeader = ({
           sm: "row",
         },
         gap: 2,
+        py: { xs: 2,},
+        
       }}
     >
       {/* Page Information */}

@@ -1,20 +1,19 @@
 import React from "react";
 
-import { Box, Grid, Paper, Alert, Typography, Skeleton, Button, Avatar, Stack, IconButton, } from "@mui/material";
+import { Box, Grid, Alert, Typography, Skeleton, Button, Stack, } from "@mui/material";
 
 import PeopleAltRoundedIcon from "@mui/icons-material/PeopleAltRounded";
 import SchoolRoundedIcon from "@mui/icons-material/SchoolRounded";
-import AdminPanelSettingsRoundedIcon from "@mui/icons-material/AdminPanelSettingsRounded";
 import GroupsRoundedIcon from "@mui/icons-material/GroupsRounded";
 
 import useDashboardStats from "../../hooks/useDashboardStats";
 import StatCard from "../../common/StatsCard";
-import { Add, SchoolRounded, GroupsRounded, QuizRounded, InfoOutline, ApartmentRounded, MoreVertRounded, CalendarTodayOutlined, BarChartRounded, AddBoxRounded, WavingHandRounded, } from "@mui/icons-material";
+import { Add, ApartmentRounded, CalendarTodayOutlined, BarChartRounded, AddBoxRounded, WavingHandRounded, } from "@mui/icons-material";
 
 import { useSelector } from "react-redux";
 
-import FacultyCount from "../../../components/AdminComponents/FacultyCount";
-import StudentsCount from "../../../components/DashbaordComponents/StudentsCount";
+// import FacultyCount from "../../../components/AdminComponents/FacultyCount";
+// import StudentsCount from "../../../components/DashbaordComponents/StudentsCount";
 const DashboardStats = () => {
   const {
     stats,
@@ -90,7 +89,7 @@ const DashboardStats = () => {
       subtitle: "12 grades",
     },
     {
-      title: "Total Users",
+      title: "Supporting Staff",
       value: stats.totalUsers,
       icon: <GroupsRoundedIcon />,
       color: "#8B5CF6",
