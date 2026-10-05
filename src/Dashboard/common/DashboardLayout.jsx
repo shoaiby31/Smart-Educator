@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { Box, Toolbar } from "@mui/material";
+import { Box } from "@mui/material";
 import { Outlet } from "react-router-dom";
 
 import Sidebar from "./Sidebar";
 import TopBar from "./TopBar";
-import DashboardHeader from "./DashboardHeader";
+// import DashboardHeader from "./DashboardHeader";
 
-const DRAWER_WIDTH = 280;
+// const DRAWER_WIDTH = 280;
 
 const DashboardLayout = () => {
   const [mobileOpen, setMobileOpen] = useState(false);

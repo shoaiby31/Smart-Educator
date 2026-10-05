@@ -12,7 +12,7 @@ import { useSelector } from "react-redux";
 
 import FacultyHeader from "../components/faculty/FacultyHeader";
 import FacultyTable from "../components/faculty/FacultyTable";
-import FacultyRequests from "../components/faculty/FacultyRequests";
+// import FacultyRequests from "../components/faculty/FacultyRequests";
 import EmptyFaculty from "../components/faculty/EmptyFaculty";
 
 import {

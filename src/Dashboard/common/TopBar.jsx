@@ -2,8 +2,8 @@ import React from "react";
 import {
   AppBar, Toolbar, IconButton, Button, Menu, MenuItem, Divider, Box, Avatar, Typography, Paper, InputBase, useTheme, useMediaQuery,
 } from "@mui/material";
-import { useNavigate } from "react-router-dom";
-import { logoutUser } from "../../Authentication/services/authService";
+// import { useNavigate } from "react-router-dom";
+// import { logoutUser } from "../../Authentication/services/authService";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 import { SearchRounded, MenuRounded } from "@mui/icons-material";
 import { Link as RouterLink } from "react-router-dom";
@@ -17,12 +17,12 @@ const TopBar = ({ onMenuClick }) => {
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
-    const { user, userReady, loading } = useSelector((state) => state.auth);
+    const { user} = useSelector((state) => state.auth);
   
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = React.useState(null);
 
-  const open = Boolean(anchorEl);
+  // const open = Boolean(anchorEl);
 
   const openMenu = (event) => {
     setAnchorEl(event.currentTarget);
@@ -32,24 +32,24 @@ const TopBar = ({ onMenuClick }) => {
     setAnchorEl(null);
   };
 
-  const handleOpen = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
+  // const handleOpen = (event) => {
+  //   setAnchorEl(event.currentTarget);
+  // };
 
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-  const handleLogout = async () => {
-    try {
-      await logoutUser();
+  // const handleClose = () => {
+  //   setAnchorEl(null);
+  // };
+  // const handleLogout = async () => {
+  //   try {
+  //     await logoutUser();
 
-      navigate("/", {
-        replace: true,
-      });
-    } catch (error) {
-      console.error(error);
-    }
-  };
+  //     navigate("/", {
+  //       replace: true,
+  //     });
+  //   } catch (error) {
+  //     console.error(error);
+  //   }
+  // };
   return (
     <AppBar position="sticky" elevation={0}
       sx={{ bgcolor: "#fff", borderBottom: "1px solid #F1F1F4", color: "#111827", zIndex: (theme) => theme.zIndex.drawer + 1, }}>
