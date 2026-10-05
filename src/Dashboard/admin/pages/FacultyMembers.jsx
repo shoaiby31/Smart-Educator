@@ -33,6 +33,8 @@ const FacultyMembers = () => {
 
     const [search, setSearch] = useState("");
     const [statusFilter, setStatusFilter] = useState("all");
+    setSearch()
+    setStatusFilter("all")
 
     /* ==========================================================================
        Load Faculty & Requests
